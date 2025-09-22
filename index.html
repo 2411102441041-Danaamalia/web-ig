@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Profile</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Layout Utama -->
+  <div class="flex">
+
+    <!-- Sidebar -->
+    <aside class="w-60 h-screen border-r border-gray-800 p-4 hidden md:block">
+      <h1 class="text-2xl font-bold mb-6">Instagram</h1>
+      <ul class="space-y-4">
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-house"></i> Home</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-search"></i> Search</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-compass"></i> Explore</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-camera-reels"></i> Reels</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-chat-dots"></i> Messages</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-heart"></i> Notifications</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-plus-square"></i> Create</a></li>
+        <li><a href="#" class="flex items-center gap-3 hover:text-gray-400"><i class="bi bi-person-circle"></i> Profile</a></li>
+      </ul>
+    </aside>
+
+    <!-- Konten Profil -->
+    <main class="flex-1 p-6">
+      <!-- Header Profil -->
+      <div class="flex items-center gap-10 mb-6">
+        <!-- Foto Profil Bulat -->
+        <div class="w-32 h-32">
+          <img src="profile.jpg" alt="profile" 
+               class="rounded-full border-4 border-gray-600 object-cover w-full h-full">
+        </div>
+        <!-- Info Profil -->
+        <div>
+          <div class="flex items-center gap-4 mb-2">
+            <h2 class="text-xl">anameallia__</h2>
+            <button class="btn btn-outline-light btn-sm">Edit Profile</button>
+            <button class="btn btn-outline-light btn-sm">View Archive</button>
+          </div>
+          <div class="flex gap-6 mb-2">
+            <span><strong>0</strong> posts</span>
+            <span><strong>1.115</strong> followers</span>
+            <span><strong>463</strong> following</span>
+          </div>
+          <p class="text-gray-400">not care.</p>
+        </div>
+      </div>
+
+      <!-- Highlight Story -->
+      <div class="flex items-center gap-6 mb-6">
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 flex items-center justify-center rounded-full border-2 border-gray-600">
+            <span class="text-3xl">+</span>
+          </div>
+          <span class="mt-2 text-sm">New</span>
+        </div>
+      </div>
+
+      <!-- Tab Navigasi -->
+      <div class="border-t border-gray-700 flex justify-center gap-10 py-3 text-gray-400 text-sm uppercase tracking-wider">
+        <a href="#" class="flex items-center gap-1 hover:text-white"><i class="bi bi-grid-3x3"></i> Posts</a>
+        <a href="#" class="flex items-center gap-1 hover:text-white"><i class="bi bi-bookmark"></i> Saved</a>
+        <a href="#" class="flex items-center gap-1 hover:text-white"><i class="bi bi-person-bounding-box"></i> Tagged</a>
+      </div>
+
+      <!-- Tidak Ada Postingan -->
+      <div class="flex flex-col items-center justify-center py-20 text-gray-500">
+        <i class="bi bi-camera" style="font-size: 4rem;"></i>
+        <p class="mt-4 text-lg">No Posts Yet</p>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
